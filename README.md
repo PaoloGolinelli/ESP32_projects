@@ -15,3 +15,8 @@ In this project I exploit the several integrated touch sensors available in an E
 The analog readings values for a "press" and a "not pressed" may vary by a lot depending on the length of the jumper cable used,
 on the person touching the cable and other factors. Thus I wrote an auto calibration procedure that allow to detect 
 various tipes of touches: touching the exposed metallic wire as well as touching the plastic coating.
+
+## parallel_IO_ESP32
+In this project I show an example on how to exploit the secondary core of ESP32 to do work in parallel with the primary core.
+It is in fact very common the need of reading inputs while preforming computation and/or outputting serial data, which is quite time consuming
+E.g.: printing on a display while reading analog data
